@@ -3,8 +3,8 @@
 
 ## Vista previa - Encriptador
 
-![Light-Mode](/src/img/result1.png)
-![Dark-Mode](/src/img/result2.png)
+![Light-Mode](/src/result1.png)
+![Dark-Mode](/src/result2.png)
 
 
 ### Redes sociales
