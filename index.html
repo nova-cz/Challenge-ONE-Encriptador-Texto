@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="container">
+    <main class="main">
+        <div class="container-form">
+            <header class="header">
+                <img class="logo" src="src/img/logo.png" alt="Alura" />
+            </header>
+            <div class="container-content">
+                <section class="container-form">
+                    <textarea class="textarea-form" name="" id="" cols="30" rows="10">Ingresa el texto aquí</textarea>
+                </section>
+                <section class="container-buttons">
+                    <div class="info">
+                        <img src="src/img/icono-exclamacion.png" alt="Exclamación">
+                        <span>Solo letras minúsuclas y sin acentos</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="button button-encrypt">Encriptar</button>
+                        <button class="button button-decrypt">Desencriptar</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="container-encrypted"">
+        <div class=" container-message">
+            <img class="img-doll" src="src/img/muñeco.png" alt="muñeco" />
+            <b class="title-message">Ningún mensaje fue encontrado</b>
+            <p class="text-message">Ingresa el texto que desees encriptar o descriptar.</p>
+            </div>
+            <div class="hidde container-text">
+                <p class="text-encrypted"></p>
+                <button class="button button-copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="text-footer">
+            Created by
+            <a href="https://erikaax.com" target="_blank" rel="noopener noreferrer">@ErikaAX</a>
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
