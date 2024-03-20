@@ -152,6 +152,20 @@
     cursor: pointer;
 }
 
+.button-clean {
+    background-color: transparent;
+    border: var(--accent-text-color) 1px solid;
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+.button-clear {
+    background-color: transparent;
+    border: var(--accent-text-color) 1px solid;
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -171,6 +185,67 @@
     display: block;
 }
 
+.toggle-theme-btn {
+    border: 1px solid var(--accent-text-color);
+    border-radius: 8px;
+    padding: 8px 12px; 
+}
+
+body.dark-mode {
+    background-color: #0A3871;
+    color: white;
+}
+
+.dark-mode #logo-img{
+    filter: brightness(0) invert(1);
+}
+.dark-mode #exclamation-img {
+    filter: brightness(0) invert(1);
+}
+
+.dark-mode .textarea-form,
+.dark-mode .dark-mode .button {
+    background-color: #0A3871;
+    color: white;
+}
+
+.dark-mode .button-encrypt,
+.dark-mode .button-decrypt,
+.dark-mode .button-copy,
+.dark-mode .button-clear{
+    background-color: white;
+    color: var(--accent-text-color);
+}
+
+.dark-mode .dark-mode-icon {
+    display: inline-block;
+}
+
+.light-mode-icon {
+    display: none;
+}
+
+.light-mode-icon {
+    background-image: url('src/icons/sun.png'); 
+}
+
+.dark-mode-icon {
+    background-image: url('src/icons/moon.png'); 
+}
+
+.light-mode-icon,
+.dark-mode-icon {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+}
+
+.right-align {
+    position: absolute;
+    top: 20px; 
+    right: 10px;
+}
+
 /* MOBILE */
 @media only screen and (min-width: 768px) {
     .buttons {
@@ -179,6 +254,26 @@
     
     .button {
         width: 100%;
+    }
+
+    .textarea-form {
+        font-size: 18px; 
+    }
+
+    .img-doll {
+        display: block;    
+    }
+
+    .container-encrypted {
+        flex-basis: 100%; 
+        max-width: none; 
+        margin: 10px; 
+        height: auto; 
+    }
+
+    .footer {
+        padding: 10px;
+        margin: 10px; 
     }
 }
 
@@ -192,12 +287,12 @@
         flex-direction: row;
         flex-basis: 100%;
     }
-    
+
     .textarea-form {
-        font-size: 32px;
+        font-size: 28px;
     }
-    
-    .img-doll{
+
+    .img-doll {
         display: block;    
     }
     
@@ -207,7 +302,7 @@
         margin-top: 10px;
         max-width: 295px;
     }
-    
+
     .footer {
         padding: 20px;
         margin: 0px;
